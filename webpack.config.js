@@ -18,7 +18,8 @@ module.exports = {
         { test: /\.js$/, include: path.resolve(__dirname, 'src'), loader: 'eslint' }
     ],
     loaders: [
-      { test: /\.js$/, include: path.resolve(__dirname, 'src'), loaders: ['react-hot', 'babel-loader'] }
+      { test: /\.js$/, include: path.resolve(__dirname, 'src'), loaders: ['react-hot', 'babel-loader'] },
+      { test: /\.html$/, include: path.resolve(__dirname, 'src'), loader: 'file?name=[name].html' }
     ]
   },
   plugins: [
