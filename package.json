@@ -1,6 +1,6 @@
 {
   "name": "webpack-babel-react",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "src/app.js",
   "scripts": {
@@ -9,11 +9,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@git.epam.com:deyan_yanakiev/webpack-babel-react.git"
+    "url": "git+https://github.com/LittleFurryBastards/webpack-babel-react.git"
   },
   "keywords": [],
-  "author": "Deyan Yanakiev <deyan_yanakiev@epam.com>",
-  "license": "ISC",
+  "author": "Deyan Yanakiev <kliomba@abv.bg>",
+  "license": "MIT",
   "dependencies": {
     "react": "^0.14.7",
     "react-dom": "^0.14.7"
