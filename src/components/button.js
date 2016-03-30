@@ -1,9 +1,9 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 
-export default class Button extends React.Component {
-  render() {
-    return (
-      <button onClick={this.props.handleClick}>{this.props.text}</button>
-    )
-  }
-}
+/* eslint-disable no-unused-vars */
+
+const Button = ({handleClick, text}) =>
+  <button onClick={handleClick}>{text}</button>;
+
+export default Button;

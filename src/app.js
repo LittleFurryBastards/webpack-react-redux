@@ -1,11 +1,9 @@
-import './index.html';
-import ReactDOM from 'react-dom';
-
 /* eslint-disable no-unused-vars */
-
+import './index.html';
 import React from 'react';
-import Anchor from './components/anchor';
-import Button from './components/button';
+import ReactDOM from 'react-dom';
+import Anchor from './components/Anchor';
+import Button from './components/Button';
 
 /* eslint-disable no-unused-vars */
 
