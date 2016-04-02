@@ -6,7 +6,9 @@
   "scripts": {
     "test": "jest --coverage",
     "dist": "webpack",
-    "dev": "webpack-dev-server"
+    "dev": "webpack-dev-server",
+    "start": "webpack-dev-server --config webpack.config.js --progress --colors",
+    "storybook": "start-storybook -p 9001 & open http://localhost:9001"
   },
   "repository": {
     "type": "git",
@@ -27,6 +29,7 @@
     "react-dom": "^0.14.8"
   },
   "devDependencies": {
+    "@kadira/storybook": "^1.1.0",
     "babel-core": "^6.7.4",
     "babel-eslint": "^6.0.0",
     "babel-jest": "^9.0.3",
