@@ -17,12 +17,28 @@ module.exports = {
   },
   module: {
     preLoaders: [
-      { test: /\.(js|jsx)$/, include: path.resolve(__dirname, 'src'), loader: 'eslint' }
+      {
+        test: /\.(es6|jsx)$/,
+        include: SRC_FOLDER,
+        loader: 'eslint'
+      }
     ],
     loaders: [
-      { test: /\.(js|jsx)$/, include: SRC_FOLDER, loaders: ['react-hot', 'babel-loader'] },
-      { test: /\.html$/, include: SRC_FOLDER, loader: 'file?name=[name].html' },
-      { test: /\.css$/, include: SRC_FOLDER, loader: "style-loader!css-loader" }
+      {
+        test: /\.(es6|jsx)$/,
+        include: SRC_FOLDER,
+        loaders: ['react-hot', 'babel-loader']
+      },
+      {
+        test: /\.html$/,
+        include: SRC_FOLDER,
+        loader: 'file?name=[name].html'
+      },
+      {
+        test: /\.css$/,
+        include: SRC_FOLDER,
+        loader: 'style-loader!css-loader'
+      }
     ]
   },
   plugins: [

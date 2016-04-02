@@ -3,11 +3,10 @@ import ReactDOM from 'react-dom';
 import Anchor from './components/Anchor/component.jsx';
 import Button from './components/Button/component.jsx';
 
-ReactDOM.render(
-  <div>
-    <h1>Hello, world!</h1>
-    <Anchor link="http://google.com" text="go to Google" />
-    <Button text="delete" />
-  </div>,
-  document.getElementById('main')
-);
+const app = <div>
+  <h1>Hello, world!</h1>
+  <Anchor link="http://google.com" text="go to Google" />
+  <Button text="delete" />
+</div>;
+
+ReactDOM.render(app, document.getElementById('main'));
