@@ -6,7 +6,7 @@ module.exports = {
   output: {
     path: 'dist',
     filename: 'bundle.js',
-    publicPath: 'http://localhost:8080/dist'
+    publicPath: '/'
   },
   devServer: {
     inline: true,
