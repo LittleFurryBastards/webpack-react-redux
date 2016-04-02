@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
-
+import styles from './styles.css';
 /* eslint-disable no-unused-vars */
 
 const Button = ({handleClick, text}) =>
