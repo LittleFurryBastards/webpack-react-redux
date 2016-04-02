@@ -1,11 +1,7 @@
-/* eslint-disable no-unused-vars */
-import './index.html';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Anchor from './components/Anchor';
-import Button from './components/Button';
-
-/* eslint-disable no-unused-vars */
+import Anchor from './components/Anchor/component.jsx';
+import Button from './components/Button/component.jsx';
 
 ReactDOM.render(
   <div>

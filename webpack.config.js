@@ -1,8 +1,10 @@
 const path = require('path');
 const webpack = require('webpack');
 
+const SRC_FOLDER = path.resolve(__dirname, 'src');
+
 module.exports = {
-  entry: './src/app.js',
+  entry: './src/index.jsx',
   output: {
     path: 'dist',
     filename: 'bundle.js',
@@ -15,11 +17,12 @@ module.exports = {
   },
   module: {
     preLoaders: [
-        { test: /\.js$/, include: path.resolve(__dirname, 'src'), loader: 'eslint' }
+      { test: /\.(js|jsx)$/, include: path.resolve(__dirname, 'src'), loader: 'eslint' }
     ],
     loaders: [
-      { test: /\.js$/, include: path.resolve(__dirname, 'src'), loaders: ['react-hot', 'babel-loader'] },
-      { test: /\.html$/, include: path.resolve(__dirname, 'src'), loader: 'file?name=[name].html' }
+      { test: /\.(js|jsx)$/, include: SRC_FOLDER, loaders: ['react-hot', 'babel-loader'] },
+      { test: /\.html$/, include: SRC_FOLDER, loader: 'file?name=[name].html' },
+      { test: /\.css$/, include: SRC_FOLDER, loader: "style-loader!css-loader" }
     ]
   },
   plugins: [
