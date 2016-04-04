@@ -35,9 +35,9 @@ module.exports = {
         loader: 'file?name=[name].html'
       },
       {
-        test: /\.css$/,
+        test: /\.less$/,
         include: SRC_FOLDER,
-        loader: 'style-loader!css-loader'
+        loaders: ['style-loader', 'css-loader', 'less-loader']
       }
     ]
   },
