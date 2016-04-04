@@ -4,7 +4,7 @@ const webpack = require('webpack');
 const SRC_FOLDER = path.resolve(__dirname, 'src');
 
 module.exports = {
-  entry: './src/index.jsx',
+  entry: './src/index.js',
   output: {
     path: 'dist',
     filename: 'bundle.js',
@@ -18,14 +18,14 @@ module.exports = {
   module: {
     preLoaders: [
       {
-        test: /\.(es6|jsx)$/,
+        test: /\.js$/,
         include: SRC_FOLDER,
         loader: 'eslint'
       }
     ],
     loaders: [
       {
-        test: /\.(es6|jsx)$/,
+        test: /\.js$/,
         include: SRC_FOLDER,
         loaders: ['react-hot', 'babel-loader']
       },
