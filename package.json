@@ -5,8 +5,7 @@
   "main": "src/app.js",
   "scripts": {
     "test": "jest --coverage",
-    "dist": "webpack",
-    "dev": "webpack-dev-server",
+    "dist": "jest; webpack",
     "start": "webpack-dev-server --config webpack.config.js --progress --colors",
     "storybook": "start-storybook -p 9001 & open http://localhost:9001"
   },
