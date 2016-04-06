@@ -5,7 +5,8 @@
   "main": "src/app.js",
   "scripts": {
     "test": "jest --coverage",
-    "dist": "jest; webpack",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "dist": "webpack",
     "start": "webpack-dev-server --config webpack.config.js --progress --colors",
     "storybook": "start-storybook -p 9001 & open http://localhost:9001"
   },
