@@ -1,8 +1,8 @@
 {
   "name": "webpack-babel-react",
   "version": "0.0.1",
-  "description": "",
-  "main": "src/app.js",
+  "description": "A starting point for projects with webpack, babel and react",
+  "main": "src/index.js",
   "scripts": {
     "test": "jest --coverage",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
@@ -14,7 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/LittleFurryBastards/webpack-babel-react.git"
   },
-  "keywords": [],
+  "keywords": ["webpack", "babel", "react"],
   "author": "Deyan Yanakiev <kliomba@abv.bg>",
   "license": "MIT",
   "jest": {
