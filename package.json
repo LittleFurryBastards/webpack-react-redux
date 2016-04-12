@@ -1,6 +1,6 @@
 {
   "name": "webpack-babel-react",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A starting point for projects with webpack, babel and react",
   "main": "src/index.js",
   "scripts": {
