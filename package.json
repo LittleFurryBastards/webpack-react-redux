@@ -7,14 +7,18 @@
     "test": "jest --coverage",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "dist": "webpack",
-    "start": "webpack-dev-server --config webpack.config.js --progress --colors",
+    "start": "webpack-dev-server --config webpack.config.js --progress --colors --history-api-fallback",
     "storybook": "start-storybook -p 9001 & open http://localhost:9001"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LittleFurryBastards/webpack-babel-react.git"
   },
-  "keywords": ["webpack", "babel", "react"],
+  "keywords": [
+    "webpack",
+    "babel",
+    "react"
+  ],
   "author": "Deyan Yanakiev <kliomba@abv.bg>",
   "license": "MIT",
   "jest": {
@@ -26,7 +30,8 @@
   },
   "dependencies": {
     "react": "15.0.1",
-    "react-dom": "15.0.1"
+    "react-dom": "15.0.1",
+    "react-router": "2.1.1"
   },
   "devDependencies": {
     "@kadira/storybook": "^1.10.0",

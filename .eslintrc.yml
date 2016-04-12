@@ -2,7 +2,9 @@ env:
   browser: true
   es6: true
   node: true
-extends: ['eslint:recommended', 'plugin:react/recommended']
+extends:
+  - eslint:recommended
+  - plugin:react/recommended
 parserOptions:
   ecmaFeatures:
     experimentalObjectRestSpread: true
@@ -72,7 +74,7 @@ rules:
     - always
   newline-before-return: error
   newline-per-chained-call: error
-  no-alert: error
+  no-alert: 'off'
   no-array-constructor: error
   no-bitwise: error
   no-caller: error
