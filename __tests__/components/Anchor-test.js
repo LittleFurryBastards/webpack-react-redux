@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ReactTestUtils from 'react-addons-test-utils';
@@ -10,10 +11,10 @@ jest.unmock('../../src/components/Anchor');
 
 describe('Anchor Component', () => {
   it('should be an anchor HTML element', () => {
-    let renderer = ReactTestUtils.createRenderer();
+    const renderer = ReactTestUtils.createRenderer();
 
-    renderer.render(<Anchor link="www" text="www" />)
-    let output = renderer.getRenderOutput();
+    renderer.render(<Anchor link="www" text="www" />);
+    const output = renderer.getRenderOutput();
 
     expect(output.type).toBe('a');
   });
