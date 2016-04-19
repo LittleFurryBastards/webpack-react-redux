@@ -12,3 +12,4 @@ A starting point for projects with webpack, babel and react
 3. npm install
 4. npm start
 5. npm run storybook (to run the storybook tool)
+6. npm run lint (to run the eslint on all js files)
