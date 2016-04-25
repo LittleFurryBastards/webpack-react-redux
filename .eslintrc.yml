@@ -62,7 +62,7 @@ rules:
     - unix
   lines-around-comment: error
   max-depth: error
-  max-len: error
+  max-len: ["error", 120, 2]
   max-nested-callbacks: error
   max-params: error
   max-statements: error
@@ -81,8 +81,10 @@ rules:
   no-catch-shadow: error
   no-confusing-arrow: error
   no-continue: error
+  no-console: ["warn", { allow: ["warn", "error"] }]
   no-div-regex: error
   no-duplicate-imports: error
+  no-debugger: warn
   no-else-return: error
   no-empty-function: error
   no-eq-null: error
@@ -135,7 +137,7 @@ rules:
   no-shadow-restricted-names: error
   no-spaced-func: error
   no-sync: error
-  no-ternary: error
+  no-ternary: off
   no-throw-literal: error
   no-trailing-spaces: error
   no-undef-init: error
@@ -144,6 +146,7 @@ rules:
   no-unmodified-loop-condition: error
   no-unneeded-ternary: error
   no-unused-expressions: error
+  no-unused-vars: warn
   no-use-before-define: error
   no-useless-call: error
   no-useless-concat: error
@@ -189,7 +192,7 @@ rules:
   space-unary-ops: error
   spaced-comment: error
   strict: error
-  template-curly-spacing: error
+  template-curly-spacing: off
   valid-jsdoc: error
   vars-on-top: error
   wrap-iife: error
