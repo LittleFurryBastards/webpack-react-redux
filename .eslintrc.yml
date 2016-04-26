@@ -2,6 +2,8 @@ env:
   browser: true
   es6: true
   node: true
+  jasmine: true
+  jest: true
 extends:
   - eslint:recommended
   - plugin:react/recommended
@@ -62,7 +64,10 @@ rules:
     - unix
   lines-around-comment: error
   max-depth: error
-  max-len: ["error", 120, 2]
+  max-len:
+    - error
+    - 120
+    - 2
   max-nested-callbacks: error
   max-params: error
   max-statements: error
@@ -81,7 +86,12 @@ rules:
   no-catch-shadow: error
   no-confusing-arrow: error
   no-continue: error
-  no-console: ["warn", { allow: ["warn", "error"] }]
+  no-console:
+    - warn
+    -
+      allow:
+        - warn
+        - error
   no-div-regex: error
   no-duplicate-imports: error
   no-debugger: warn
@@ -184,7 +194,11 @@ rules:
   sort-imports: 'off'
   sort-vars: 'off'
   space-before-blocks: error
-  space-before-function-paren: error
+  space-before-function-paren:
+    - error
+    -
+      anonymous: always
+      named: never
   space-in-parens:
     - error
     - never
