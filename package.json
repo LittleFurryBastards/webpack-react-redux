@@ -10,7 +10,7 @@
     "lint": "./node_modules/.bin/eslint . --ext .js; exit 0",
     "start": "webpack-dev-server --config webpack.config.js --progress --colors --history-api-fallback",
     "storybook": "start-storybook -p 9001 & open http://localhost:9001",
-    "pre-commit": "npm test && npm run lint"
+    "pre-push": "npm test && npm run lint"
   },
   "repository": {
     "type": "git",
