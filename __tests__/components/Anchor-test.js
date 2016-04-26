@@ -1,11 +1,6 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-undef */
 import React from 'react';
-import ReactDOM from 'react-dom';
 import ReactTestUtils from 'react-addons-test-utils';
 import Anchor from '../../src/components/Anchor';
-
-/* eslint-disable no-unused-vars */
 
 jest.unmock('../../src/components/Anchor');
 

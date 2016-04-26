@@ -8,11 +8,11 @@ import reducers from './reducers';
  * @returns {Object} - Returning the new state
  */
 const rootReducer = (state, action) => {
-  const actionType = action.type;
+  const [reducer, method] = action.type.split(':');
   let newState = state;
 
-  if (reducers[action.type]) {
-    newState = reducers[actionType](state, action);
+  if (reducers[reducer]) {
+    newState = reducers[reducer](state, method, action.payload);
   } else {
     console.warn(`There is no reducer for the recieved action! (action type: ${ action.type })`);
   }
