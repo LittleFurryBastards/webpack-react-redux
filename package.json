@@ -1,7 +1,7 @@
 {
-  "name": "webpack-babel-react",
+  "name": "webpack-react-redux",
   "version": "0.0.2",
-  "description": "A starting point for projects with webpack, babel and react",
+  "description": "A starting point for projects with webpack, react and redux",
   "main": "src/index.js",
   "scripts": {
     "test": "jest --coverage",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LittleFurryBastards/webpack-babel-react.git"
+    "url": "git+https://github.com/LittleFurryBastards/webpack-react-redux.git"
   },
   "keywords": [
     "webpack",
