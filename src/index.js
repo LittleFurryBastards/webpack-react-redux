@@ -1,18 +1,19 @@
-import './index.html';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
+
+import './index.html';
 import App from './components/App';
-import AnchorRoute from './routes/AnchorRoute';
-import HomeRoute from './routes/HomeRoute';
-import ButtonRoute from './routes/ButtonRoute';
+import UserContainer from './components/UserContainer';
+import UserDetails from './components/UserDetails';
 
 ReactDOM.render(
   <Router history={browserHistory}>
     <Route path="/" component={App}>
-      <IndexRoute component={HomeRoute} />
-      <Route path="/anchor" component={AnchorRoute} />
-      <Route path="/button" component={ButtonRoute} />
+      <IndexRoute component={UserContainer} />
+      <Route path="users">
+       <Route path="/users/:id" component={UserDetails} />
+     </Route>
     </Route>
   </Router>,
   document.getElementById('main')
