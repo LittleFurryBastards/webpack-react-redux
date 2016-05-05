@@ -7,10 +7,6 @@ import AnchorRoute from './routes/AnchorRoute';
 import HomeRoute from './routes/HomeRoute';
 import ButtonRoute from './routes/ButtonRoute';
 
-import store from './store';
-
-console.log(store.getState());
-
 ReactDOM.render(
   <Router history={browserHistory}>
     <Route path="/" component={App}>

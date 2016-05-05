@@ -8,8 +8,10 @@ module.exports = {
   output: {
     path: 'dist',
     filename: 'bundle.js',
+    sourceMapFilename: 'bundle.map',
     publicPath: '/'
   },
+  devtool: '#source-map',
   devServer: {
     inline: true,
     hot: true,
