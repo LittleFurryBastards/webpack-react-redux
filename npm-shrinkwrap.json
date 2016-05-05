@@ -3533,6 +3533,11 @@
         }
       }
     },
+    "webpack-babel-jest": {
+      "version": "1.0.4",
+      "from": "webpack-babel-jest@latest",
+      "resolved": "https://registry.npmjs.org/webpack-babel-jest/-/webpack-babel-jest-1.0.4.tgz"
+    },
     "webpack-core": {
       "version": "0.6.8",
       "from": "webpack-core@>=0.6.0 <0.7.0",
