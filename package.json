@@ -39,7 +39,7 @@
     "redux": "3.5.1"
   },
   "devDependencies": {
-    "@kadira/storybook": "1.10.0",
+    "@kadira/storybook": "1.20.0",
     "babel-core": "6.7.6",
     "babel-eslint": "6.0.2",
     "babel-jest": "10.0.2",
