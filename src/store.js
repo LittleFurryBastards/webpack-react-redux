@@ -6,13 +6,18 @@ const rootReducer = (state, action) => {
       return Object.assign({}, state, {
         users: state.users.concat(action.data)
       });
+    case 'users:currentUser':
+      return Object.assign({}, state, {
+        currentUser: action.data
+      });
     default:
       return state;
   }
 };
 
 const store = createStore(rootReducer, {
-  users: []
+  users: [],
+  currentUser: {}
 });
 
 export default store;

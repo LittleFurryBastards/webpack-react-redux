@@ -5,14 +5,14 @@ import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import './index.html';
 import App from './components/App';
 import UserContainer from './components/UserContainer';
-import UserDetails from './components/UserDetails';
+import UserDetailsContainer from './components/UserDetailsContainer';
 
 ReactDOM.render(
   <Router history={browserHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={UserContainer} />
       <Route path="users">
-       <Route path="/users/:id" component={UserDetails} />
+       <Route path="/users/:id" component={UserDetailsContainer} />
      </Route>
     </Route>
   </Router>,
