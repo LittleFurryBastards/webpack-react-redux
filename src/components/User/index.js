@@ -16,7 +16,7 @@ const User = ({ color, id, name, companyName, phone }) => (
 
 User.propTypes = {
   color: React.PropTypes.string,
-  id: React.PropTypes.string,
+  id: React.PropTypes.number,
   name: React.PropTypes.string,
   companyName: React.PropTypes.string,
   phone: React.PropTypes.string

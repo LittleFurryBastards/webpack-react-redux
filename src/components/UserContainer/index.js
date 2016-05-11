@@ -1,19 +1,18 @@
 import './user-container.less';
 
-import axios from 'axios';
 import React from 'react';
 
 import User from '../User';
+import { getUsers } from '../../actions';
+import store from '../../store';
 
 const UserContainer = React.createClass({
   getInitialState() {
     return {
-      users: []
+      users: store.getState().users
     };
   },
   render() {
-    console.warn('Rendering UserContainer');
-
     return (
       <section className="wrr-user-container">
         { this.state.users.map(this.createUser) }
@@ -21,8 +20,8 @@ const UserContainer = React.createClass({
     );
   },
   componentDidMount() {
-    axios.get('http://jsonplaceholder.typicode.com/users')
-      .then((response) => this.setState({ users: response.data }));
+    this.unsubscribe = store.subscribe(() => this.setState({ users: store.getState().users }));
+    getUsers();
   },
   createUser(user) {
     return (
@@ -34,14 +33,10 @@ const UserContainer = React.createClass({
         companyName={user.company.name}
         phone={user.phone} />
     );
+  },
+  componentWillUnmount() {
+    this.unsubscribe();
   }
 });
-
-UserContainer.propTypes = {
-  color: React.PropTypes.string,
-  name: React.PropTypes.string,
-  companyName: React.PropTypes.string,
-  phone: React.PropTypes.string
-};
 
 export default UserContainer;
