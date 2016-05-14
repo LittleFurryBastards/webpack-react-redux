@@ -16,4 +16,18 @@ describe('Thumbnail Component', () => {
 
     expect(output.props.className).toBe('wrr-thumbnail');
   });
+
+  it('should have a default color #000', () => {
+    const expected = { color: '#000' };
+    const output = shallowRender(<Thumbnail />);
+
+    expect(output.props.style).toEqual(expected);
+  });
+
+  it('should properly set color to #fff when passed', () => {
+    const expected = { color: '#fff' };
+    const output = shallowRender(<Thumbnail color={expected.color} />);
+
+    expect(output.props.style).toEqual(expected);
+  });
 });
