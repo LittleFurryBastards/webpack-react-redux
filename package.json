@@ -24,6 +24,7 @@
   "author": "Deyan Yanakiev <kliomba@abv.bg>",
   "license": "MIT",
   "jest": {
+    "verbose": true,
     "scriptPreprocessor": "<rootDir>/node_modules/webpack-babel-jest",
     "unmockedModulePathPatterns": [
       "<rootDir>/node_modules/react",
