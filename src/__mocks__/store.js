@@ -1,5 +1,13 @@
+let state = { users: [] };
+
 const storeMock = {
-  dispatch: jest.fn()
+  setUsers(users) {
+    state = Object.assign({}, state, {
+      users
+    });
+  },
+  dispatch: jest.fn(),
+  getState: jest.fn(() => state)
 };
 
 export default storeMock;
