@@ -1,0 +1,2 @@
+--compilers js:babel-core/register,less:tests/utils/lessCompiler
+tests/**/*.test.js
