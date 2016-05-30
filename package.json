@@ -4,7 +4,7 @@
   "description": "A starting point for projects with webpack, react and redux",
   "main": "src/index.js",
   "scripts": {
-    "test": "jest --coverage",
+    "test": "jest --config jest.config.json --coverage",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "dist": "webpack",
     "lint": "eslint src",
@@ -23,17 +23,6 @@
   ],
   "author": "Deyan Yanakiev <kliomba@abv.bg>",
   "license": "MIT",
-  "jest": {
-    "verbose": true,
-    "testFileExtensions": ["test.js"],
-    "scriptPreprocessor": "<rootDir>/node_modules/webpack-babel-jest",
-    "unmockedModulePathPatterns": [
-      "<rootDir>/node_modules/react",
-      "<rootDir>/node_modules/react-dom",
-      "<rootDir>/node_modules/react-addons-test-utils",
-      "<rootDir>/__tests__/utils/shallowRender"
-    ]
-  },
   "dependencies": {
     "axios": "0.11.0",
     "react": "15.0.2",
@@ -56,14 +45,13 @@
     "eslint-loader": "1.3.0",
     "eslint-plugin-react": "4.3.0",
     "file-loader": "0.8.5",
-    "jest-cli": "12.0.2",
+    "jest-cli": "12.1.1",
     "less": "2.6.1",
     "less-loader": "2.2.3",
     "react-addons-test-utils": "15.0.2",
     "react-hot-loader": "1.3.0",
     "style-loader": "0.13.1",
     "webpack": "1.12.15",
-    "webpack-babel-jest": "1.0.4",
     "webpack-dev-server": "1.14.1"
   }
 }

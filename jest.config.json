@@ -1,0 +1,11 @@
+{
+  "verbose": true,
+  "testRegex": "test.js",
+  "setupFiles": ["__tests__/utils/shallowRender.js"],
+  "unmockedModulePathPatterns": [
+    "<rootDir>/node_modules/react",
+    "<rootDir>/node_modules/react-dom",
+    "<rootDir>/node_modules/react-addons-test-utils",
+    "<rootDir>/__tests__/utils/shallowRender"
+  ]
+}
