@@ -1,8 +1,9 @@
+jest.unmock('../../src/components/UserDetails');
+
 import React from 'react';
 import shallowRender from '../utils/shallowRender';
 
 import UserDetails from '../../src/components/UserDetails';
-jest.unmock('../../src/components/UserDetails');
 
 describe('UserDetails Component', () => {
   it('should be an article HTML element', () => {

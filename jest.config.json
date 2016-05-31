@@ -1,7 +1,9 @@
 {
   "verbose": true,
   "testRegex": "test.js",
-  "setupFiles": ["__tests__/utils/shallowRender.js"],
+  "moduleNameMapper": {
+    "^.+\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
+  },
   "unmockedModulePathPatterns": [
     "<rootDir>/node_modules/react",
     "<rootDir>/node_modules/react-dom",

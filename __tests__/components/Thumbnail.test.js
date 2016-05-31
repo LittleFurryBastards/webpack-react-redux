@@ -1,8 +1,9 @@
+jest.unmock('../../src/components/Thumbnail');
+
 import React from 'react';
 import shallowRender from '../utils/shallowRender';
 
 import Thumbnail from '../../src/components/Thumbnail';
-jest.unmock('../../src/components/Thumbnail');
 
 describe('Thumbnail Component', () => {
   it('should be a div HTML element', () => {
