@@ -4,7 +4,7 @@
   "description": "A starting point for projects with webpack, react and redux",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha --opts mocha.opts",
+    "test": "babel-node node_modules/istanbul/lib/cli cover node_modules/mocha/bin/_mocha -- --opts mocha.opts --recursive",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "dist": "webpack",
     "lint": "eslint src",
@@ -32,6 +32,7 @@
   },
   "devDependencies": {
     "@kadira/storybook": "1.20.0",
+    "babel-cli": "6.9.0",
     "babel-core": "6.7.6",
     "babel-eslint": "6.0.2",
     "babel-loader": "6.2.4",
@@ -45,6 +46,7 @@
     "eslint-plugin-react": "4.3.0",
     "expect": "1.20.1",
     "file-loader": "0.8.5",
+    "istanbul": "1.0.0-alpha.2",
     "less": "2.6.1",
     "less-loader": "2.2.3",
     "mocha": "2.4.5",
